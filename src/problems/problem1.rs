@@ -1,3 +1,8 @@
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we
+// get 3, 5, 6 and 9. The sum of these multiples is 23.
+//
+// Find the sum of all the multiples of 3 or 5 below 1000.
+
 use crate::problems::problem::Problem;
 
 const M: usize = 3;
@@ -15,7 +20,7 @@ impl Problem<usize, usize> for Problem1 {
     }
 }
 
-// Unsafe and will crash when computed value exceeds usize::MAX
+// Unsafe and will panic when computed value exceeds usize::MAX
 fn sum_n(n: usize, d: usize) -> usize {
     let n = n / d;
     return d * n * (n + 1) / 2;
