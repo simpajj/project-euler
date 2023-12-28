@@ -2,10 +2,10 @@
 name = "euler"
 version = "0.1.0"
 authors = ["simpajj <simonsalloum@protonmail.com>"]
-edition = "2018"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-colored = "2"
-num = "0.3.1"
+colored = "2.1.0"
+num = "0.4.1"
